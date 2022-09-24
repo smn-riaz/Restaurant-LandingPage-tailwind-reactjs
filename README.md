@@ -1,1 +1,1 @@
-## Restaurand Landing Page
+## Restaurant Landing Page
