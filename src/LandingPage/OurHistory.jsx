@@ -6,8 +6,8 @@ const OurHistory = () => {
   return (
     <main id="about">
       <div className="sm:flex sm:flex-row">
-        <div className="basis-1/2 p-16">
-          <img src={about} alt="" />
+        <div className="basis-1/2 my-auto">
+          <img src={about} alt="" className=""/>
         </div>
         <div className="basis-1/2 my-auto space-y-5 p-5">
           <div>

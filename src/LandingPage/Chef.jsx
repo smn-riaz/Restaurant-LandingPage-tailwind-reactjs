@@ -10,6 +10,7 @@ import chef1 from "../Assets/chef1.png";
 import chef2 from "../Assets/chef2.png";
 import chef3 from "../Assets/chef3.png";
 import { Link } from "react-router-dom";
+import SectionHeader from "../Components/SectionHeader";
 
 const Chef = () => {
   const chefs = [
@@ -46,26 +47,23 @@ const Chef = () => {
     },
   ]
   return (
-    <main className="min-h-screen p-10" id="chefs">
-      <section className="p-7 space-y-2">
-        <h4 className="text-xl px-5 text-gray-400">Poupular Dishes</h4>
-        <h1 className="text-5xl">Our Exclusive Items</h1>
-      </section>
-      <section className="p-7">
-        <div className="sm:grid sm:grid-cols-3">
+    <main className="py-4" id="chefs">
+      <SectionHeader text1="Popular Dishes" text2="Our Chefs"/>
+      <section className="sm:p-7">
+        <div className="flex flex-col sm:flex-row md:flex-row">
           {
-            chefs.map(chef =>  <div className="space-y-3 m-5 rounded-3xl border-gray-100 transition duration-150 ease-in-out border-2 hover:shadow-lg hover:shadow-orange-600/20">
+            chefs.map(chef =>  <div className="basis-1/3 space-y-3 m-5 rounded-3xl border-gray-100 transition duration-150 ease-in-out border-2 hover:shadow-lg hover:shadow-orange-600/20">
             <div>
               <img src={chef.image} alt="" className="w-full" />
             </div>
-            <div className="p-5 space-y-3 text-center">
+            <div className="sm:p-5 space-y-3 text-center">
               <div>
                 <h2 className="text-2xl">{chef.name}</h2>
               </div>
               <div>
                 <p>Chef Master</p>
               </div>
-              <div className="grid grid-cols-4 gap-5 ">
+              <div className="grid grid-cols-4 sm:gap-5 py-4">
 
                 {
                   icons.map(icon =>  <div>
@@ -79,6 +77,7 @@ const Chef = () => {
           }
         </div>
       </section>
+      <hr className="w-1/2 text-orange-500"/>
     </main>
   );
 };
