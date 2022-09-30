@@ -11,7 +11,6 @@ import TopBanner from './TopBanner'
 
 const LandingPage = () => {
   return (
-    
     <main>
         <TopBanner />
         <ExclusiveItems />

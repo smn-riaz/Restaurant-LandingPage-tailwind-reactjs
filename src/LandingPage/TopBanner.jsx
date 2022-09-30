@@ -7,10 +7,10 @@ import { HashLink } from "react-router-hash-link";
 
 const TopBanner = () => {
   return (
-    <main className="min-h-screen ">
+    <main className="min-h-screen">
       <section className=""><Navbar /></section>
-      <section className="flex flex-row sm:p-20 p-12 my-10">
-        <div className="sm:basis-1/2">
+      <section className="sm:flex sm:flex-row flex-row-reverse sm:p-20 p-12 my-10 overflow-hidden">
+        <div className="sm:basis-1/2 z-10">
           <div className="py-6">
             <h5 className="text-3xl text-orange-500 font-medium">
               Quality Taste Food
@@ -39,8 +39,8 @@ const TopBanner = () => {
           </div>
         </div>
 
-        <div className="sm:basis-1/2">
-            <div><img src={bg} alt="" /></div>
+        <div className="sm:basis-1/2 md:-rotate-45 md:scale-125 md:translate-x-60 z-10">
+            <div className=""><img src={bg} alt="" className="md:rounded-[60px]"/></div>
         </div>
       </section>
     </main>
