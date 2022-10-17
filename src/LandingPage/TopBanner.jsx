@@ -7,7 +7,7 @@ import { HashLink } from "react-router-hash-link";
 
 const TopBanner = () => {
   return (
-    <main className="">
+    <main className="min-h-screen">
       <section className="">
         <Navbar />
       </section>
