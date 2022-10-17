@@ -21,21 +21,21 @@ const Contact = () => {
                 <div>
                   <input
                     type="text"
-                    className="w-full border-l-0 border-r-0 border-t-0 bg-slate-300"
+                    className="w-full border-l-0 border-r-0 border-t-0 bg-slate-300 p-2 focus:outline-none"
                     placeholder="Name *"
                   />
                 </div>
                 <div>
                   <input
                     type="text"
-                    className="w-full border-l-0 border-r-0 border-t-0 bg-slate-300"
+                    className="w-full border-l-0 border-r-0 border-t-0 bg-slate-300 p-2 focus:outline-none"
                     placeholder="Persons *"
                   />
                 </div>
                 <div>
                   <input
                     type="text"
-                    className="w-full border-l-0 border-r-0 border-t-0 bg-slate-300"
+                    className="w-full border-l-0 border-r-0 border-t-0 bg-slate-300 p-2 focus:outline-none"
                     placeholder="Date *"
                   />
                 </div>
@@ -44,21 +44,21 @@ const Contact = () => {
                 <div>
                   <input
                     type="text"
-                    className="w-full border-l-0 border-r-0 border-t-0 bg-slate-300"
+                    className="w-full border-l-0 border-r-0 border-t-0 bg-slate-300 p-2 focus:outline-none"
                     placeholder="Email *"
                   />
                 </div>
                 <div>
                   <input
                     type="text"
-                    className="w-full border-l-0 border-r-0 border-t-0 bg-slate-300"
+                    className="w-full border-l-0 border-r-0 border-t-0 bg-slate-300 p-2 focus:outline-none"
                     placeholder="Phone Number *"
                   />
                 </div>
                 <div>
                   <input
                     type="text"
-                    className="w-full border-l-0 border-r-0 border-t-0 bg-slate-300"
+                    className="w-full border-l-0 border-r-0 border-t-0 bg-slate-300 p-2 focus:outline-none"
                     placeholder="Time *"
                   />
                 </div>
@@ -67,14 +67,14 @@ const Contact = () => {
             <div className="">
               <textarea
                 type="text"
-                className="w-full border-l-0 border-r-0 border-t-0 bg-slate-300"
+                className="w-full border-l-0 border-r-0 border-t-0 bg-slate-300 p-2 focus:outline-none"
                 placeholder="Comment *"
               />
             </div>
             <div>
               <button
                 type="button"
-                class="transition duration-700 ease-in-out hover:bg-orange-600  bg-orange-500 text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-md px-6  py-3 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                class="transition duration-700 ease-in-out hover:bg-orange-600  bg-orange-500 text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-md px-6  py-3 text-center mr-3 md:mr-0 "
               >
                 BOOK A TABLE
               </button>

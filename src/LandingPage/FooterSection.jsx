@@ -41,7 +41,7 @@ const FooterSection = () => {
             <div className="text-gray-500">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             <div className="flex flex-row bg-white py-1 ">
-                <input type="text" placeholder="Enter Your Email" className="p-2 border-0 w-full" /><button className="text-orange-500"><FontAwesomeIcon icon={faPaperPlane} /></button>
+                <input type="text" placeholder="Enter Your Email" className="p-2 border-0 w-full focus:outline-none" /><button className="text-orange-500"><FontAwesomeIcon icon={faPaperPlane} /></button>
             </div>
             </div>
           </div>

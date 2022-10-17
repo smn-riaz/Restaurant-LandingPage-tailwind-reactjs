@@ -6,25 +6,21 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
-import chef1 from "../Assets/chef1.png";
-import chef2 from "../Assets/chef2.png";
-import chef3 from "../Assets/chef3.png";
-import { Link } from "react-router-dom";
 import SectionHeader from "../Components/SectionHeader";
 
 const Chef = () => {
   const chefs = [
     {
       name: "Adam Smith",
-      image: chef1,
+      image: "https://i.ibb.co/0sk2xGy/chef1.png",
     },
     {
       name: "John Smith",
-      image: chef2,
+      image: "https://i.ibb.co/JvpjKhV/chef2.png",
     },
     {
       name: "Rohn Smith",
-      image: chef3,
+      image: "https://i.ibb.co/hMTQgf7/chef3.png",
     },
   ];
 
@@ -50,9 +46,9 @@ const Chef = () => {
     <main className="py-4" id="chefs">
       <SectionHeader text1="Popular Dishes" text2="Our Chefs"/>
       <section className="sm:p-7">
-        <div className="flex flex-col sm:flex-row md:flex-row">
+        <div className="sm:flex sm:flex-row">
           {
-            chefs.map(chef =>  <div className="basis-1/3 space-y-3 m-5 rounded-3xl border-gray-100 transition duration-150 ease-in-out border-2 hover:shadow-lg hover:shadow-orange-600/20">
+            chefs.map(chef =>  <div className="md:basis-1/3 sm:basis-1/2 basis-0 space-y-3 m-12 sm:m-6 rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl rounded-br-[100px] border-gray-100 transition duration-150 ease-in-out border-2 hover:shadow-lg hover:shadow-orange-600/20">
             <div>
               <img src={chef.image} alt="" className="w-full" />
             </div>
@@ -63,11 +59,11 @@ const Chef = () => {
               <div>
                 <p>Chef Master</p>
               </div>
-              <div className="grid grid-cols-4 sm:gap-5 py-4">
+              <div className="grid grid-cols-4 w-3/4 sm:gap-5 py-4">
 
                 {
                   icons.map(icon =>  <div>
-                    <button className="hover:bg-orange-500 ease-in-out duration-700 hover:text-white border-2 text-md text-gray-400 rounded-full px-2 py-1 w-1/2"><a href={icon.link}><FontAwesomeIcon  icon={icon.name} /></a></button>
+                    <button className="hover:bg-orange-500 ease-in-out duration-700 hover:text-white text-center border-2 text-md text-gray-400 rounded-full h-[30px] w-[30px]"><a href={icon.link}><FontAwesomeIcon  icon={icon.name} /></a></button>
                   </div>)
                 }
                

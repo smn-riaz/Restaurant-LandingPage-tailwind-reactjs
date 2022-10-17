@@ -1,24 +1,21 @@
 import React from "react";
-import fooditem1 from "../Assets/fooditem1.png";
-import fooditem2 from "../Assets/fooditem2.png";
-import fooditem3 from "../Assets/fooditem3.png";
 import ReadMoreBtn from "../Components/ReadMoreBtn";
 import SectionHeader from "../Components/SectionHeader";
 
 const ExclusiveItems = () => {
   const exclusives = [
     {
-      image: fooditem1,
+      image: "https://i.ibb.co/6R4C7zs/fooditem1.png",
       headline:"Mutton Burger",
       details:"Lorem ipsum dolor sit amet consectetur adipisicing elit"
     },
     {
-      image: fooditem2,
+      image: "https://i.ibb.co/ZzbFh50/fooditem2.png",
       headline:"Special Dish",
       details:"Lorem ipsum dolor sit amet consectetur adipisicing elit"
     },
     {
-      image: fooditem3,
+      image: "https://i.ibb.co/Nn4z4Py/fooditem3.png",
       headline:"Tasty Cake",
       details:"Lorem ipsum dolor sit amet consectetur adipisicing elit"
     },

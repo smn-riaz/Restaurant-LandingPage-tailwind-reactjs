@@ -5,9 +5,14 @@ module.exports = {
     "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'great-vibes': ["'Great Vibes', cursive"],
+      },
+    },
   },
-  plugins: [
-    require('flowbite/plugin')
-]
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: false,
+  },
 }
