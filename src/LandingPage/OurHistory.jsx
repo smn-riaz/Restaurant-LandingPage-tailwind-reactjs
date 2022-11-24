@@ -1,24 +1,27 @@
 import React from "react";
 import ReadMoreBtn from "../Components/ReadMoreBtn";
+import SectionHeader from "../Components/SectionHeader";
 
 const OurHistory = () => {
   return (
-    <main id="about">
-      <div className="sm:flex sm:flex-row px-10 py-14 space-x-4">
+    <main className="px-4 ss:px-6 md:px-16 xl:px-40 py-6 md:py-16" id="popular">
+    <SectionHeader text1="Poupular Dishes" text2="Our Exclusive Items" />
+    <section className="sm:px-12">
+      <div className="md:flex flex-row py-8 space-x-4 space-y-4">
         <div className="basis-3/5 my-auto">
-          <img src="https://i.ibb.co/64wH6dd/pizza2.png" alt="" className=""/>
+          <img src="https://i.ibb.co/64wH6dd/pizza2.png" alt="" className="w-full h-full"/>
         </div>
-        <div className="basis-2/5 my-auto space-y-8">
-          <div>
-            <h2 className="text-xl font-bold text-gray-400 py-2">Our History</h2>
-            <h1 className="text-5xl">
+        <div className="basis-2/5 space-y-6">
+          <div className="space-y-2">
+            <h2 className="text-2xl text-gray-600 xl:text-4xl">Our History</h2>
+            <h1 className="text-4xl font-mono xl:text-6xl">
               Where The Food's As Good As The Root Beer.
             </h1>
           </div>
           <h3 className="text-2xl">
             Satisfying people hunger for simple pleasures
           </h3>
-          <p className="text-lg">
+          <p className="text-lg xl:text-xl">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi,
             porro. Dolorem quis commodi impedit odio, exercitationem repellendus
             cumque! Reiciendis aperiam exercitationem laborum minus quis, sit
@@ -28,6 +31,7 @@ const OurHistory = () => {
           <div><ReadMoreBtn /></div>
         </div>
       </div>
+      </section>
     </main>
   );
 };

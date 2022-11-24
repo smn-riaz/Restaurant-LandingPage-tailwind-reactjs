@@ -13,12 +13,12 @@ import SpecialItems from "./SpecialItems";
 import Preloader from "../Components/Preloader/Preloader";
 
 const LandingPage = () => {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 4000);
-  }, []);
+  const [loading, setLoading] = useState(false);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 4000);
+  // }, []);
   return (
     <main className="overflow-x-hidden">
       {loading ? (

@@ -13,14 +13,17 @@ const Chef = () => {
     {
       name: "Adam Smith",
       image: "https://i.ibb.co/0sk2xGy/chef1.png",
+      type:"Asian Food"
     },
     {
       name: "John Smith",
       image: "https://i.ibb.co/JvpjKhV/chef2.png",
+      type:"Chinese Food"
     },
     {
       name: "Rohn Smith",
       image: "https://i.ibb.co/hMTQgf7/chef3.png",
+      type:"Thai Food"
     },
   ];
 
@@ -43,37 +46,41 @@ const Chef = () => {
     },
   ]
   return (
-    <main className="py-4" id="chefs">
-      <SectionHeader text1="Popular Dishes" text2="Our Chefs"/>
-      <section className="sm:p-7">
-        <div className="sm:flex sm:flex-row">
-          {
-            chefs.map(chef =>  <div className="md:basis-1/3 sm:basis-1/2 basis-0 space-y-3 m-12 sm:m-6 rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl rounded-br-[100px] border-gray-100 transition duration-150 ease-in-out border-2 hover:shadow-lg hover:shadow-orange-600/20">
-            <div>
-              <img src={chef.image} alt="" className="w-full" />
-            </div>
-            <div className="sm:p-5 space-y-3 text-center">
-              <div>
-                <h2 className="text-2xl">{chef.name}</h2>
+    <main className="px-4 ss:px-6 md:px-16 xl:px-40 py-6 md:py-16" id="popular">
+      <SectionHeader text1="Cooking Speciality" text2="Our Expert Chefs" />
+      <section className="sm:px-12">
+        <div className="grid md:grid-cols-3 grid-cols-1 xs:grid-cols-2">
+          {chefs.map((chef) => (
+            <div className="m-5 rounded-3xl transition duration-150 ease-in-out border-gray-100 border-2 hover:shadow-xl rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl rounded-br-[100px]">
+              <div className="w-full">
+                <img src={chef.image} alt="" className="w-full" />
               </div>
-              <div>
-                <p>Chef Master</p>
+              <div className="p-4 space-y-3">
+                <div>
+                  <h2 className="font-semibold text-xl lg:text-2xl xl:text-4xl">
+                    {chef.name}
+                  </h2>
+                </div>
+                <div>
+                <p className="text-lg font-semibold text-primary xl:text-2xl">#{chef.type}</p>
               </div>
               <div className="grid grid-cols-4 w-3/4 sm:gap-5 py-4">
 
                 {
                   icons.map(icon =>  <div>
-                    <button className="hover:bg-orange-500 ease-in-out duration-700 hover:text-white text-center border-2 text-md text-gray-400 rounded-full h-[30px] w-[30px]"><a href={icon.link}><FontAwesomeIcon  icon={icon.name} /></a></button>
+                    <button className="hover:bg-orange-500 ease-in-out duration-700 hover:text-white text-center border-2 text-md text-gray-400 rounded-full h-[30px] w-[30px] xl:h-[50px] xl:w-[50px]"><a href={icon.link}><FontAwesomeIcon  icon={icon.name} /></a></button>
                   </div>)
                 }
                
               </div>
+                <div>
+                  
+                </div>
+              </div>
             </div>
-          </div>)
-          }
+          ))}
         </div>
       </section>
-      <hr className="w-1/2 text-orange-500"/>
     </main>
   );
 };

@@ -8,33 +8,33 @@ const SpecialItems = () => {
   const specialFoods = [
     {
       image: "https://i.ibb.co/f97dmXv/plate1.png",
-      name:"Plate1",
-      type:"Fish"
+      name: "Plate 1",
+      type: "Fish",
     },
     {
-      image:"https://i.ibb.co/f2065dy/plate2.png",
-      name:"Plate2",
-      type:"Vegetable"
+      image: "https://i.ibb.co/f2065dy/plate2.png",
+      name: "Plate 2",
+      type: "Vegetable",
     },
     {
       image: "https://i.ibb.co/BLXPTpH/plate3.png",
-      name:"Plate3",
-      type:"Vegetable"
+      name: "Plate 3",
+      type: "Vegetable",
     },
     {
       image: "https://i.ibb.co/S33WQxF/plate4.png",
-      name:"Plate4",
-      type:"Beef"
+      name: "Plate 4",
+      type: "Beef",
     },
     {
       image: "https://i.ibb.co/DpX6FmP/plate5.png",
-      name:"Plate5",
-      type:"Chicken"
+      name: "Plate 5",
+      type: "Chicken",
     },
     {
       image: "https://i.ibb.co/Drkt8HX/plate6.png",
-      name:"Plate6",
-      type:"Fish"
+      name: "Plate 6",
+      type: "Fish",
     },
   ];
 
@@ -48,7 +48,16 @@ const SpecialItems = () => {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 2200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1424,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -59,8 +68,8 @@ const SpecialItems = () => {
       {
         breakpoint: 766,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 2,
+          slidesToShow: 2,
+          slidesToScroll: 1,
           initialSlide: 2,
         },
       },
@@ -74,29 +83,31 @@ const SpecialItems = () => {
     ],
   };
   return (
-    <main className="py-8 overflow-x-hidden px-6 bg-[#e4e0dfa9]">
-        <SectionHeader text1="Vegetable & Fish" text2="Our special items" />
-      <div className="p-2">
-      <Slider {...settings}>
-        {specialFoods.map((food) => (
-          <div className="relative p-2">
-            <div className="h-[150px]"></div>
-            <div className="p-6 flex justify-end items-end h-[200px] rounded-3xl bg-[#fffffff3]">
-              <div className="">
-                <h2 className="px-8 font-bold">{food.name}</h2>
-                <h3 className="px-8">{food.type}</h3>
-                <p className="px-8 font-semibold">$35.00</p>
+    <main className="px-4 ss:px-6 md:px-16 xl:px-40 py-6 md:py-16 bg-[#33303005]" id="popular">
+      <SectionHeader text1="Vegetable & Fish" text2="Our Special Items" />
+      <section className="sm:px-2">
+        <div className="p-2">
+          <Slider {...settings}>
+            {specialFoods.map((food) => (
+              <div className="relative p-2 w-fit">
+                <div className="h-[170px]"></div>
+                <div className="flex justify-end md:items-center py-2 items-end h-[180px] rounded-3xl border-[0.1px] border-[#e2854279] bg-[#fffffff3]">
+                  <div className="mr-10">
+                    <h2 className="px-1 text-2xl font-bold uppercase">{food.name}</h2>
+                    <h3 className="px-1 text-xl text-primary font-medium">{food.type}</h3>
+                    <p className="px-1 text-md font-semibold text-gray-600">$35.00</p>
+                  </div>
+                </div>
+                <img
+                  src={food.image}
+                  alt=""
+                  className="absolute inset-0 flex justify-center items-center w-64"
+                />
               </div>
-            </div>
-            <img
-              src={food.image}
-              alt=""
-              className="absolute inset-0 flex justify-center items-center w-64"
-            />
-          </div>
-        ))}
-      </Slider>
-      </div>
+            ))}
+          </Slider>
+        </div>
+      </section>
     </main>
   );
 };
