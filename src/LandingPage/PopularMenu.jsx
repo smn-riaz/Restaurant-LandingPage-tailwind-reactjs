@@ -44,7 +44,7 @@ const PopularMenu = () => {
   const menuName = ["special", "breakfast", "launch", "dinner", "sneaks"];
   const [selectedMenu, setSelectedMenu] = useState("special");
 
-  const [shuffledOpacity, setShuffledOpacity] = useState(false)
+  const [shuffledOpacity, setShuffledOpacity] = useState(false);
 
   const handleSelectedMenu = (value) => {
     setSelectedMenu(value);
@@ -52,19 +52,20 @@ const PopularMenu = () => {
       .map((value) => ({ value, sort: Math.random() }))
       .sort((a, b) => a.sort - b.sort)
       .map(({ value }) => value);
-      
+    setShuffledOpacity(true);
     setTimeout(() => {
+      setShuffledOpacity(false);
       setShuffledMenu(shuffled);
-    }, 1500);
+    }, 1000);
   };
 
   return (
     <main
-      className="px-4 ss:px-6 md:px-16 xl:px-40 py-6 md:py-16 bg-[#33303005]"
-      id="popular"
+      className="section-layout1 bg-[#33303005]"
+      id="menu"
     >
       <SectionHeader text1="Vegetable & Fish" text2="Our Special Items" />
-      <section className="px-6 flex justify-center items-center overflow-x-auto">
+      <section className="flex items-center xs:justify-center overflow-x-auto">
         {menuName.map((menu) => (
           <div className="m-2">
             <button
@@ -81,11 +82,17 @@ const PopularMenu = () => {
         ))}
       </section>
 
-      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+      <section
+        className={
+          shuffledOpacity
+            ? `grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 opacity-10 duration-500`
+            : `grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 opacity-100 duration-500`
+        }
+      >
         {shuffledMenu.map((menu) => (
-          <div className="flex flex-row justify-betwen items-center m-8 bg-white border-primary border-[0.1px]">
+          <div className="flex flex-row justify-betwen items-center m-8 bg-[#e2ab861f] rounded-lg border-primary border-[0.1px]">
             <div className="w-full h-full basis-1/2">
-              <img src={menu.image} className="h-[100%] w-[100%]" alt="" />
+              <img src={menu.image} className="h-[100%] w-[100%] rounded-l-lg rounded-r-[60px]" alt="" />
             </div>
             <div className="space-y-4 p-2 basis-1/2">
               <div className="space-y-1">

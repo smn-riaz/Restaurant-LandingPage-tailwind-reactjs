@@ -12,7 +12,7 @@ const TopBanner = () => {
         <Navbar />
       </section>
 
-      <section className="ss:flex justify-center items-center  px-3 ss:px-6 md:px-16 xl:px-40 bg-[#F0EED4]">
+      <section className="ss:flex justify-center items-center py-4  px-3 ss:px-6 md:px-16 xl:px-40 bg-[#F0EED4]">
         <div className="ss:bg-inherit space-y-6 md:space-y-8 basis-1/2">
           <div className="pt-8">
             <h5 className="text-3xl text-orange-500 font-medium md:text-4xl xl:text-6xl">
@@ -34,7 +34,9 @@ const TopBanner = () => {
           </div>
           <div className="flex flex-col ss:flex-row ss:space-x-4 space-y-4 ss:space-y-0 ss:items-center items-start">
             <div className="">
-              <button className="border-2 hover:bg-orange-500 hover:text-white transition duration-700 hover:ring-2 hover:ring-offset-2 py-2 px-6 text-lg font-medium border-orange-400 hover:text-orange md:text-xl md:py-3 xl:text-2xl">
+              <button
+                className="border-2 hover:bg-orange-500 hover:text-white transition duration-700 hover:ring-2 hover:ring-offset-2 py-2 px-6 text-lg font-medium border-orange-400 hover:text-orange md:text-xl md:py-3 xl:text-2xl"
+              >
                 <HashLink ssooth to="/#contact">
                   Reservation
                 </HashLink>
@@ -47,18 +49,25 @@ const TopBanner = () => {
                     className="text-orange-500 text-lg"
                     icon={faPlay}
                   />
-                </span><span>Reviews</span>
+                </span>
+                <span>Reviews</span>
               </button>
             </div>
           </div>
         </div>
 
         <div className="basis-1/2 ">
-          <img src="https://i.ibb.co/9GFv3NM/pizza.png" alt="" className="md:w-[90%]" />
+          <img
+            src="https://i.ibb.co/9GFv3NM/pizza.png"
+            alt=""
+            className="md:w-[90%]"
+          />
           <div className="flex justify-end">
             <div className="shadow-gray-300 rounded-lg animate-bounce bg-[#ebe8e7e0] shadow-xl p-2 md:p-4">
               <div className="flex justify-between items-center">
-                <h2 className="font-bold text-xl md:text-2xl text-orange-600">7%</h2>
+                <h2 className="font-bold text-xl md:text-2xl text-orange-600">
+                  7%
+                </h2>
                 <h2>
                   <img src={party} alt="" className="h-5 md:h-8" />
                 </h2>

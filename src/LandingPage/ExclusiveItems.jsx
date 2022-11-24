@@ -21,7 +21,7 @@ const ExclusiveItems = () => {
     },
   ];
   return (
-    <main className="px-4 ss:px-6 md:px-16 xl:px-40 py-6 md:py-16" id="popular">
+    <main className="px-4 ss:px-6 md:px-16 xl:px-40 py-6 md:py-16" id="">
       <SectionHeader text1="Poupular Dishes" text2="Our Exclusive Items" />
       <section className="sm:px-12">
         <div className="grid md:grid-cols-3 grid-cols-1 xs:grid-cols-2">

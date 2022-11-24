@@ -83,7 +83,7 @@ const SpecialItems = () => {
     ],
   };
   return (
-    <main className="px-4 ss:px-6 md:px-16 xl:px-40 py-6 md:py-16 bg-[#33303005]" id="popular">
+    <main className="section-layout1 bg-[#33303005]" id="">
       <SectionHeader text1="Vegetable & Fish" text2="Our Special Items" />
       <section className="sm:px-2">
         <div className="p-2">

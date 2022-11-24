@@ -29,8 +29,9 @@ const LandingPage = () => {
           <ExclusiveItems />
           <OurHistory />
           <SpecialItems />
-          <PopularMenu />
+
           <Chef />
+          <PopularMenu />
           <Blog />
           <Contact />
           <FooterSection />

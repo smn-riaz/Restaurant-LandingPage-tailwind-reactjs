@@ -46,7 +46,8 @@ const Chef = () => {
     },
   ]
   return (
-    <main className="px-4 ss:px-6 md:px-16 xl:px-40 py-6 md:py-16" id="popular">
+    
+    <main className="section-layout1" id="chef">
       <SectionHeader text1="Cooking Speciality" text2="Our Expert Chefs" />
       <section className="sm:px-12">
         <div className="grid md:grid-cols-3 grid-cols-1 xs:grid-cols-2">

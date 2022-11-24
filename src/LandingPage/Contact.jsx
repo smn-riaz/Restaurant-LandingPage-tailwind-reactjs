@@ -4,16 +4,14 @@ import SectionHeader from "../Components/SectionHeader";
 
 const Contact = () => {
   return (
-    <main id="contact"
-      className=""
-      style={{
-        backgroundImage: `url(${contactbg})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    >
-      <SectionHeader text1="Reservations" text2="Book A Table"/>
-      <section className="sm:p-10">
+    <main className="section-layout1" id="contact"
+    style={{
+      backgroundImage: `url(${contactbg})`,
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+    }}>
+      <SectionHeader text1="Quick Contact" text2="Ready to Reply" />
+      <section className="sm:px-12">
         <div className="sm:flex sm:flex-row">
           <div className="basis-3/5 p-8 space-y-12">
             <div className="flex flex-row space-x-12">

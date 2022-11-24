@@ -25,8 +25,8 @@ const Blog = () => {
     },
   ];
   return (
-    <main className="px-4 ss:px-6 md:px-16 xl:px-40 py-6 md:py-16" id="popular">
-      <SectionHeader text1="Poupular Dishes" text2="Our Exclusive Items" />
+    <main className="section-layout1" id="blog">
+      <SectionHeader text1="Health Tips" text2="Our Regular Blogs" />
       <section className="sm:px-12">
         <div className="grid md:grid-cols-3 grid-cols-1 xs:grid-cols-2">
           {blogs.map((blog) => (

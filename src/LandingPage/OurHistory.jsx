@@ -4,8 +4,8 @@ import SectionHeader from "../Components/SectionHeader";
 
 const OurHistory = () => {
   return (
-    <main className="px-4 ss:px-6 md:px-16 xl:px-40 py-6 md:py-16" id="popular">
-    <SectionHeader text1="Poupular Dishes" text2="Our Exclusive Items" />
+    <main className="section-layout1" id="about">
+    <SectionHeader text1="About Us" text2="Our Long Journey" />
     <section className="sm:px-12">
       <div className="md:flex flex-row py-8 space-x-4 space-y-4">
         <div className="basis-3/5 my-auto">
